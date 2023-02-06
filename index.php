@@ -13,10 +13,10 @@ include __DIR__ . "/database.php";
     <title>OOP 2</title>
     <!-- css -->
     <link rel="stylesheet" href="./style/style.css">
-
-
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body class="bg-dark">
@@ -32,8 +32,21 @@ include __DIR__ . "/database.php";
                         <img class="card-img-top" src="<?php echo $product->image ?>" alt="not available">
                         <div class="card-body">
                             <h4><?php echo $product->name ?></h4>
+                            <p><?php switch ($product->item) {
+                                    case "Dog":
+                                        echo "<i class='fa-solid fa-dog'></i> " . "$product->item";
+                                        break;
+                                    case "Cat":
+                                        echo "<i class='fa-solid fa-cat'></i> " . "$product->item";
+                                        break;
+                                    case "Bird":
+                                        echo "<i class='fa-solid fa-dove'></i> " . "$product->item";
+                                        break;
+                                    case "Fish":
+                                        echo "<i class='fa-solid fa-fish'></i> " . "$product->item";
+                                        break;
+                                } ?></p>
                             <p>Prezzo: €<?php echo $product->price ?></p>
-                            <p><?php echo $product->item ?></p>
                             <p><?php if (isset($product->weight)) {
                                     echo "Peso: " . $product->weight;
                                 };
