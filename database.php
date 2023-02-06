@@ -13,7 +13,7 @@ $foodProduct_4 = new Food("Mangime per pesci Guppy in Fiocchi", "2,95", "https:/
 
 // accessories
 $accessoriesProduct_1 = new Accessories("Voliera Wilma in legno", "184,99", "https://images.unsplash.com/photo-1634413102755-7f0857eba45b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmlyZCUyMGNhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", "Bird", "Legno", "M: L83xP67xH153cm");
-$accessoriesProduct_2 = new Accessories("Cartucce filtranti per filtro EasyCrystal", "2,29", "https://images.unsplash.com/photo-1611181354769-4dc8f1a35486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZmlzaCUyMGZpbHRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", "Fish", "Material espanso", "ND");
+$accessoriesProduct_2 = new Accessories("Cartucce filtranti per filtro EasyCrystal", "2,29", "https://images.unsplash.com/photo-1611181354769-4dc8f1a35486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZmlzaCUyMGZpbHRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", "Fish", "Materiale espanso", "ND");
 
 // toys
 $toysProduct_1 = new Toys("Kong Classic", "13,49", "https://images.unsplash.com/photo-1535294435445-d7249524ef2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nJTIwdG95fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60", "Dog", "Galleggia e rimbalza", "8,5cm x 10cm");
