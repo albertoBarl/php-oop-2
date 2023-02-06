@@ -19,7 +19,7 @@ include __DIR__ . "/database.php";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark p-5">
     <div class="container">
         <header class="text-white">
             <h1>Boolshop</h1>
@@ -46,7 +46,7 @@ include __DIR__ . "/database.php";
                                         echo "<i class='fa-solid fa-fish'></i> " . "$product->item";
                                         break;
                                 } ?></p>
-                            <p>Prezzo: €<?php echo $product->price ?></p>
+                            <p>Prezzo: &euro;<?php echo $product->price ?></p>
                             <p><?php if (isset($product->weight)) {
                                     echo "Peso: " . $product->weight;
                                 };
