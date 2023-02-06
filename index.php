@@ -1,4 +1,7 @@
-<?php include __DIR__ . "/database.php" ?>
+<?php
+include __DIR__ . "/database.php";
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,12 +22,15 @@
         </header>
         <main>
             <h2>I nostri prodotti</h2>
-            <div>
-                <div class="card">
-                    <img src="" alt="not available">
-                    <h4></h4>
-                    <p></p>
-                </div>
+            <div class="d-flex flex-wrap gap-3">
+                <?php foreach ($productsList as $product) { ?>
+                    <div class="card" style="width: 250px">
+                        <img src="<?php echo $product->image ?>" alt="not available">
+                        <h4><?php echo $product->name ?></h4>
+                        <p><?php echo $product->price ?></p>
+                        <p><?php echo $product->item ?></p>
+                    </div>
+                <?php } ?>
             </div>
         </main>
     </div>
