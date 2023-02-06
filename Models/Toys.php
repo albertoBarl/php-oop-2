@@ -1,14 +1,14 @@
 <?php
 class Toys extends Animals
 {
-    public $sizes;
+    public $dimens;
     public $infos;
 
-    public function __construct($name, $price, $image, $item, $sizes, $infos)
+    public function __construct($name, $price, $image, $item, $dimens, $infos)
     {
         parent::__construct($name, $price, $image, $item);
 
-        $this->sizes = $sizes;
+        $this->dimens = $dimens;
         $this->infos = $infos;
     }
 }

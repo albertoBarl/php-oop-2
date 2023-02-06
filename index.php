@@ -27,8 +27,26 @@ include __DIR__ . "/database.php";
                     <div class="card" style="width: 250px">
                         <img src="<?php echo $product->image ?>" alt="not available">
                         <h4><?php echo $product->name ?></h4>
-                        <p><?php echo $product->price ?></p>
+                        <p>Prezzo: €<?php echo $product->price ?></p>
                         <p><?php echo $product->item ?></p>
+                        <p><?php if (isset($product->weight)) {
+                                echo $product->weight;
+                            };
+                            if (isset($product->material)) {
+                                echo $product->material;
+                            };
+                            if (isset($product->dimens)) {
+                                echo $product->dimens;
+                            }; ?></p>
+                        <p><?php if (isset($product->ingredients)) {
+                                echo $product->ingredients;
+                            };
+                            if (isset($product->sizes)) {
+                                echo $product->sizes;
+                            };
+                            if (isset($product->infos)) {
+                                echo $product->infos;
+                            }; ?></p>
                     </div>
                 <?php } ?>
             </div>

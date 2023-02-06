@@ -17,6 +17,6 @@ $accessoriesProduct_2 = new Accessories("Cartucce filtranti per filtro EasyCryst
 
 // toys
 $toysProduct_1 = new Toys("Kong Classic", "13,49", "image", "Dog", "Galleggia e rimbalza", "8,5cm x 10cm");
-$toysProduct_2 = new Toys("Topini di peluche Trixie", "4,99", "image", "Cat", "Material espanso", "8,5cm x 10cm");
+$toysProduct_2 = new Toys("Topini di peluche Trixie", "4,99", "image", "Cat", "Morbido con codina in corda", "8,5cm x 10cm");
 
 $productsList = [$foodProduct_1, $foodProduct_2, $foodProduct_3, $foodProduct_4, $accessoriesProduct_1, $accessoriesProduct_2, $toysProduct_1, $toysProduct_2];
