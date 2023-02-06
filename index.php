@@ -24,7 +24,7 @@ include __DIR__ . "/database.php";
             <h2>I nostri prodotti</h2>
             <div class="d-flex flex-wrap gap-3">
                 <?php foreach ($productsList as $product) { ?>
-                    <div class="card" style="width: 250px">
+                    <div class="card" style="width: 250px; line-height: 2">
                         <img src="<?php echo $product->image ?>" alt="not available">
                         <h4><?php echo $product->name ?></h4>
                         <p>Prezzo: €<?php echo $product->price ?></p>
