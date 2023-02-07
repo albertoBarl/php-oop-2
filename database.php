@@ -7,10 +7,10 @@ include __DIR__ . "/Models/Toys.php";
 
 $productsList = [
     // food
-    new Food("Royal Canin Mini Adult", "43,99", "https://images.unsplash.com/photo-1658418171785-6effc7240676?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", "Dog", "545gr", "prosciuto, riso"),
-    new Food("Almo Nature Holistic Maintenance Medium Large Tonno e Riso", "44,99", "https://images.unsplash.com/photo-1601758228006-964e41e5e8eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80", "Dog", "600gr", "manzo, cereali"),
-    new Food("Almo Nature Cat Daily Lattina", "34,99", "https://images.unsplash.com/photo-1616668983570-a971956d8928?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0JTIwZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", "Cat", "400gr", "tonno, pollo, prosciutto"),
-    new Food("Mangime per pesci Guppy in Fiocchi", "2,95", "https://images.unsplash.com/photo-1600781048302-ac9a3bc48bb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmlzaCUyMGZlZWR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", "Fish", "30gr", "pesci e sottoprodotti dei pesci, cereali, lieviti, alghe"),
+    new Food("Royal Canin Mini Adult", "43,99", "https://images.unsplash.com/photo-1658418171785-6effc7240676?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", "Dog", "545gr", ["prosciuto", "riso"]),
+    new Food("Almo Nature Holistic Maintenance Medium Large Tonno e Riso", "44,99", "https://images.unsplash.com/photo-1601758228006-964e41e5e8eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80", "Dog", "600gr", ["manzo", "cereali"]),
+    new Food("Almo Nature Cat Daily Lattina", "34,99", "https://images.unsplash.com/photo-1616668983570-a971956d8928?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0JTIwZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", "Cat", "400gr", ["tonno", "pollo", "prosciutto"]),
+    new Food("Mangime per pesci Guppy in Fiocchi", "2,95", "https://images.unsplash.com/photo-1600781048302-ac9a3bc48bb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmlzaCUyMGZlZWR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", "Fish", "30gr", ["pesci e sottoprodotti dei pesci", "cereali", "lieviti", "alghe"]),
 
     // accessories
     new Accessories("Voliera Wilma in legno", "184,99", "https://images.unsplash.com/photo-1634413102755-7f0857eba45b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmlyZCUyMGNhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", "Bird", "Legno", "M: L83xP67xH153cm"),
