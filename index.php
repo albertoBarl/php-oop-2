@@ -49,18 +49,27 @@ include __DIR__ . "/database.php";
                             <p>Prezzo: &euro;<?php echo $product->price ?></p>
                             <p><?php switch (get_class($product)) {
                                     case "Food":
-                                        echo "Peso: " . $product->weight . "<br><br>";
+                                        echo "Peso: " . $product->weight;
+                                        break;
+                                    case "Accessories":
+                                        echo "Materiale: " . $product->material;
+                                        break;
+                                    case "Toys":
+                                        echo "Caratteristiche: " . $product->specs;
+                                        break;
+                                } ?></p>
+                            <p><?php switch (get_class($product)) {
+                                    case "Food":
                                         echo "Ingredienti: " . implode(", ", $product->ingredients);
                                         break;
                                     case "Accessories":
-                                        echo "Materiale: " . $product->material . "<br><br>";
                                         echo "Dimensioni: " . $product->sizes;
                                         break;
                                     case "Toys":
-                                        echo "Caratteristiche: " . $product->specs . "<br><br>";
                                         echo "Dimensioni: " . $product->dimens;
                                         break;
                                 } ?></p>
+
                         </div>
                     </div>
                 <?php } ?>
