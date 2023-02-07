@@ -57,8 +57,7 @@ include __DIR__ . "/database.php";
                                     echo "Caratteristiche: " . $product->specs;
                                 }; ?></p>
                             <p><?php if (isset($product->ingredients)) {
-                                    $list = implode(",", $product->ingredients);
-                                    echo "Ingredienti: " . $list;
+                                    echo "Ingredienti: " . implode(", ", $product->ingredients);
                                 };
                                 if (isset($product->sizes)) {
                                     echo "Dimensioni: " . $product->sizes;
