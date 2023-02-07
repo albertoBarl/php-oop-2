@@ -47,24 +47,20 @@ include __DIR__ . "/database.php";
                                         break;
                                 } ?></p>
                             <p>Prezzo: &euro;<?php echo $product->price ?></p>
-                            <p><?php if (isset($product->weight)) {
-                                    echo "Peso: " . $product->weight;
-                                };
-                                if (isset($product->material)) {
-                                    echo "Materiale: " . $product->material;
-                                };
-                                if (isset($product->specs)) {
-                                    echo "Caratteristiche: " . $product->specs;
-                                }; ?></p>
-                            <p><?php if (isset($product->ingredients)) {
-                                    echo "Ingredienti: " . implode(", ", $product->ingredients);
-                                };
-                                if (isset($product->sizes)) {
-                                    echo "Dimensioni: " . $product->sizes;
-                                };
-                                if (isset($product->dimens)) {
-                                    echo "Dimensioni: " . $product->dimens;
-                                }; ?></p>
+                            <p><?php switch (get_class($product)) {
+                                    case "Food":
+                                        echo "Peso: " . $product->weight . "<br><br>";
+                                        echo "Ingredienti: " . implode(", ", $product->ingredients);
+                                        break;
+                                    case "Accessories":
+                                        echo "Materiale: " . $product->material . "<br><br>";
+                                        echo "Dimensioni: " . $product->sizes;
+                                        break;
+                                    case "Toys":
+                                        echo "Caratteristiche: " . $product->specs . "<br><br>";
+                                        echo "Dimensioni: " . $product->dimens;
+                                        break;
+                                } ?></p>
                         </div>
                     </div>
                 <?php } ?>
